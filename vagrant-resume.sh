@@ -4,5 +4,5 @@ if [ -z $VAGRANT_BOX ] # if no command-line arg provided, use centos7-katello-de
 then
   VAGRANT_BOX="centos7-katello-devel"
 fi
-echo VAGRANT_BOX: $VAGRANT_BOX
+echo resuming $VAGRANT_BOX
 vagrant resume $VAGRANT_BOX
