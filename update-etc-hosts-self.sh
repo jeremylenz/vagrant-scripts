@@ -3,7 +3,7 @@
 FQDN=$(hostname)
 echo hostname: $FQDN
 
-DEVEL_BOX_IP=$(hostname -i)
+DEVEL_BOX_IP=$(ip addr | grep "eth0" | grep -Po 'inet \K[\d.]+')
 echo DEVEL_BOX_IP: $DEVEL_BOX_IP
 
 if [ -z $FQDN ]
