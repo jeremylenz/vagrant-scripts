@@ -18,5 +18,5 @@ then
   exit 1
 fi
 
-echo "./update-etc-hosts.rb ${DEVEL_BOX_IP $FQDN}"
+echo "./update-etc-hosts.rb ${DEVEL_BOX_IP} ${FQDN}"
 sudo ./update-etc-hosts.rb $DEVEL_BOX_IP $FQDN
