@@ -1,4 +1,6 @@
 #!/bin/bash
+# Run this on the Vagrant box after its IP address changes.
+# It will update its /etc/hosts to the new IP address
 
 FQDN=$(hostname)
 echo hostname: $FQDN

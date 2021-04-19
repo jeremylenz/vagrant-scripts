@@ -1,4 +1,6 @@
 #!/bin/bash
+# Run this on the hypervisor after the VM's IP address changes.
+# It will update your /etc/hosts to the new IP address
 
 cd /home/jeremylenz/code/forklift
 VAGRANT_BOX=$1
